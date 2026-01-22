@@ -4,59 +4,98 @@
   <meta charset="UTF-8">
   <title>My First Website</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="This is my first personal website built with HTML, CSS and GitHub Pages.">
+
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
       background: #f4f6f8;
       color: #333;
+    }
+
+    header {
+      background: #1e90ff;
+      color: white;
+      padding: 20px;
       text-align: center;
     }
-    header {
-      background: #2f80ed;
+
+    nav a {
       color: white;
-      padding: 60px 20px;
+      margin: 0 12px;
+      text-decoration: none;
+      font-weight: bold;
     }
-    button {
+
+    .hero {
+      padding: 60px 20px;
+      text-align: center;
+      background: linear-gradient(135deg, #1e90ff, #00bfff);
+      color: white;
+    }
+
+    .hero button {
       margin-top: 20px;
       padding: 12px 24px;
-      font-size: 16px;
       border: none;
       border-radius: 6px;
       background: white;
-      color: #2f80ed;
+      color: #1e90ff;
+      font-size: 16px;
       cursor: pointer;
+      transition: 0.3s;
     }
-    section {
+
+    .hero button:hover {
+      background: #e6e6e6;
+    }
+
+    .section {
       padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
     }
+
     footer {
       background: #222;
       color: #aaa;
+      text-align: center;
       padding: 15px;
       font-size: 14px;
     }
   </style>
 </head>
+
 <body>
 
-  <header>
-    <h1>Welcome to My Website</h1>
-    <p>This is my first website hosted on GitHub Pages 🚀</p>
-    <button onclick="alert('Thanks for clicking 😎')">Click Me</button>
-  </header>
+<header>
+  <h1>My First Website</h1>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </nav>
+</header>
 
-  <section>
-    <h2>About Me</h2>
-    <p>
-      I am learning web development step by step.<br>
-      This website is built with HTML, CSS, and JavaScript.
-    </p>
-  </section>
+<div class="hero">
+  <h2>Welcome to My Website 🚀</h2>
+  <p>This website is built step by step.</p>
+  <button onclick="alert('Thanks for visiting! 😊')">Get Started</button>
+</div>
 
-  <footer>
-    © 2026 My First Website
-  </footer>
+<div class="section">
+  <h2>About Me</h2>
+  <p>
+    I am learning web development and this is my first real website.
+    More features are coming soon!
+  </p>
+</div>
+
+<footer>
+  © 2026 My First Website | Built with ❤️
+</footer>
 
 </body>
 </html>
